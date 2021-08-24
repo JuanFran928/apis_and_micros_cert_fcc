@@ -27,7 +27,7 @@ app.get("/api/hello", function (req, res) {
 // your first API endpoint... 
 app.get("/api/:date", function (req, res) {
   var dateUrl = req.params.date; 
-  if(dateUrl.match(/\d{5,}/)){
+  if(dateUrl.match(/\d{5,}/)){ // si es numeros
     dateX = new Date(parseInt(dateUrl));
 
   } else{
